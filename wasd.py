@@ -12,6 +12,8 @@ drone.connect()
 # Запуск стрима (камеры)
 drone.streamon()
 
+# Запуск
+detector = cv2.QRCodeDetector()
 print(drone.get_battery())
 
 
@@ -58,7 +60,7 @@ while True:
 
     # qr-код детектор
     if kp.get_key('g'):
-        cm.qr_detect(img)
+        cm.qr_detect(img, detector)
 
     # Скриншот
     if kp.get_key('z'):

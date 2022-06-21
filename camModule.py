@@ -12,13 +12,12 @@ def view(drone):
     return img
 
 
-def qr_detect(img):
-    detector = cv2.QRCodeDetector()
+def qr_detect(img, detector):
     data, bbox, _ = detector.detectAndDecode(img)
     if data:
         print("QR Code detected-->", data)
 
 
 def screen(img):
-    cv2.imwrite(f'Resourcers/Images/{time.time()}.jpg', img)
+    cv2.imwrite(f'Images/{time.time()}.jpg', img)
     time.sleep(0.3)
