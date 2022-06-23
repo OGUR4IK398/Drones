@@ -28,6 +28,8 @@ for j in range(600//size):
             else:
                 pygame.draw.rect(screen, (0, 255, 255), r, 0)
         c += 1
+
+
 while True:
     for ev in pygame.event.get():
         if ev.type == pygame.QUIT:

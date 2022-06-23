@@ -15,7 +15,10 @@ def view(drone):
 def qr_detect(img, detector):
     data, bbox, _ = detector.detectAndDecode(img)
     if data != '':
-        print("QR Code detected-->", data)
+        file = open('urls.txt', 'a')
+        file.seek(0, 2)
+        file.write("\n" + str(data))
+        file.close()
 
 
 def screen(img):

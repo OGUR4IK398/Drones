@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 import math
 
-##### Параметры #####
+
 f_speed = 140 / 10
 a_speed = 300 / 10
 interval = 0.01
