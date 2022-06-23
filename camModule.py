@@ -14,7 +14,7 @@ def view(drone):
 
 def qr_detect(img, detector):
     data, bbox, _ = detector.detectAndDecode(img)
-    if data:
+    if data != '':
         print("QR Code detected-->", data)
 
 
