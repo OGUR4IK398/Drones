@@ -1,6 +1,6 @@
 from djitellopy import Tello
 from time import sleep
-import KeyPressModule as kp
+from wasd_and_cam_qr import KeyPressModule as kp
 import numpy as np
 import cv2
 import math

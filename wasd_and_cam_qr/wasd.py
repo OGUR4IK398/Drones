@@ -1,7 +1,6 @@
 from djitellopy import Tello
 from time import sleep
-import KeyPressModule as kp
-import camModule as cm
+from wasd_and_cam_qr import KeyPressModule as kp, camModule as cm
 import cv2
 
 kp.init()
