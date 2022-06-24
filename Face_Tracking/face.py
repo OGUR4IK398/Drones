@@ -76,7 +76,6 @@ def track_face(info, w, pid, p_error):
     elif area < fb_range[0] and area != 0:
         fb = 20
 
-
     if x == 0:
         angle_speed = 0
         x_error = 0
